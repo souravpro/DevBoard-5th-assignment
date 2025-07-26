@@ -4,29 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBoard-5th-assignment</title>
-    <!-- google fonts -->
+    <title>DEV BOARD - 5TH ASSIGNMENT</title>
+    <!-- tailwind and daisy ui url -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts url -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!-- DaisyUi cdn link: -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Custom CSS link: -->
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+        --color-deVprimary: #F4F7FF;
+        --color-headingColor: #00303C;
+      }
     </style>
+
 </head>
 
-<body class="bg-[#f5f7ff]">
+<body class="bg-deVprimary">
+
+    <!-- header section -->
     <header class="mt-5">
         <!-- navbar -->
-        <div class="container mx-auto">
+        <nav class="container mx-auto">
             <div class="navbar bg-base-100 shadow-sm">
                 <div class="flex-1">
                     <a class="btn btn-ghost text-3xl"><img class="h-[52px] w-[52px]" src="assets/logo.png" alt=""><span
@@ -44,30 +47,35 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="mt-5 bg-[#ffffff]">
-        <div class="container mx-auto flex gap-5">
-            <!-- left content  -->
-            <div class="w-full max-w-3/4">
-                <!-- top content  -->
-                <div class="grid grid-cols-4 gap-5">
+
+
+    <!-- main section  -->
+    <main class="container mx-auto pt-10">
+        <!-- main content -->
+        <section class="gap-5 grid grid-cols-4">
+            <!-- main content left / Big section -->
+            <div class="bg-white col-span-3">
+                <!-- left content top section -->
+                <div class="grid grid-cols-4 gap-5 p-5">
+                    <!-- 1st items -->
                     <div class="col-span-1">
-                        <div class="card card-border bg-[#F4F7FF]">
+                        <div class="card card-border bg-deVprimary">
                             <div class="flex items-center p-10">
                                 <div class="">
                                     <img class="h-[28px] w-[28px]" src="assets/checkbox.png" alt="">
                                 </div>
 
                                 <div class="ml-5">
-                                    <h2 class="text-[#00303C]">Task Assigned</h2>
-                                    <h1 class="text-3xl font-bold text-[#00303C]">05</h1>
+                                    <h2 class="text-headingColor">Task Assigned</h2>
+                                    <h1 class="text-3xl font-bold text-headingColor">05</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <!-- 2nd items -->
                     <div class="col-span-2">
                         <div class="card card-border bg-linear-to-r from-cyan-500 to-blue-500">
                             <div class="flex items-center p-10">
@@ -82,9 +90,9 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- 3rd items -->
                     <div class="col-span-1">
-                        <div class="card card-border bg-[#F4F7FF]">
+                        <div class="card card-border bg-deVprimary">
                             <div class="flex items-center p-10">
                                 <div class="">
                                     <img class="h-[28px] w-[28px]" src="assets/calender.png" alt="">
@@ -92,29 +100,26 @@
 
                                 <div class="ml-5">
 
-                                    <h1 class="text-[22px] text-[#00303C]">Wed ,<br> <span class="font-bold">
+                                    <h1 class="text-[22px] text-headingColor">Wed ,<br> <span class="font-bold">
                                             Jul 28 2025</span></h1>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
-                <!-- bottom content  -->
-                <div class="grid grid-cols-3 gap-5 mt-5">
-                    <!-- BOX ITEM 01  -->
+                <!-- left content bottom section -->
+                <div class="grid grid-cols-3 gap-5 p-5">
+                    <!-- 1st items -->
                     <div>
-                        <div class="card card-border bg-[#F4F7FF] w-96">
+                        <div class="card card-border bg-deVprimary">
                             <div class="card-body">
                                 <h2 class="card-title bg-white w-28 p-2">ShopEase</h2>
-                                <h1 class="text-2xl font-[#00303C]">Fix Mobile Button Issue</h1>
+                                <h1 class="text-2xl font-headingColor">Fix Mobile Button Issue</h1>
                                 <textarea class="w-80 bg-white resize-none h-[92px] border-white" name="message"
                                     placeholder="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
 and ensure onClick works properly" id="message-box-1"></textarea>
                                 <div class="card-actions justify-between w-80">
-                                    <div class="font-[#00303C]">
+                                    <div class="font-headingColor">
                                         <h3 class="text-[14px]">Deadline</h3>
                                         <h2 class="font-medium">21 March 2025</h2>
                                     </div>
@@ -125,17 +130,17 @@ and ensure onClick works properly" id="message-box-1"></textarea>
                         </div>
                     </div>
 
-                    <!-- box-item-2 -->
+                    <!-- 2nd items -->
                     <div>
-                        <div class="card card-border bg-[#F4F7FF] w-96">
+                        <div class="card card-border bg-deVprimary">
                             <div class="card-body">
                                 <h2 class="card-title bg-white w-28 p-2">ShopEase</h2>
-                                <h1 class="text-2xl font-[#00303C]">Fix Mobile Button Issue</h1>
+                                <h1 class="text-2xl font-headingColor">Fix Mobile Button Issue</h1>
                                 <textarea class="w-80 bg-white resize-none h-[92px] border-white" name="message"
                                     placeholder="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly" id="message-box-2"></textarea>
+and ensure onClick works properly" id="message-box-1"></textarea>
                                 <div class="card-actions justify-between w-80">
-                                    <div class="font-[#00303C]">
+                                    <div class="font-headingColor">
                                         <h3 class="text-[14px]">Deadline</h3>
                                         <h2 class="font-medium">21 March 2025</h2>
                                     </div>
@@ -146,17 +151,17 @@ and ensure onClick works properly" id="message-box-2"></textarea>
                         </div>
                     </div>
 
-                    <!-- box-item-3 -->
+                    <!-- 3rd items -->
                     <div>
-                        <div class="card card-border bg-[#F4F7FF] w-96">
+                        <div class="card card-border bg-deVprimary">
                             <div class="card-body">
                                 <h2 class="card-title bg-white w-28 p-2">ShopEase</h2>
-                                <h1 class="text-2xl font-[#00303C]">Fix Mobile Button Issue</h1>
+                                <h1 class="text-2xl font-headingColor">Fix Mobile Button Issue</h1>
                                 <textarea class="w-80 bg-white resize-none h-[92px] border-white" name="message"
                                     placeholder="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly" id="message-box-3"></textarea>
+and ensure onClick works properly" id="message-box-1"></textarea>
                                 <div class="card-actions justify-between w-80">
-                                    <div class="font-[#00303C]">
+                                    <div class="font-headingColor">
                                         <h3 class="text-[14px]">Deadline</h3>
                                         <h2 class="font-medium">21 March 2025</h2>
                                     </div>
@@ -167,17 +172,17 @@ and ensure onClick works properly" id="message-box-3"></textarea>
                         </div>
                     </div>
 
-                    <!-- BOX ITEM 01  -->
+                    <!-- 4th items -->
                     <div>
-                        <div class="card card-border bg-[#F4F7FF] w-96">
+                        <div class="card card-border bg-deVprimary">
                             <div class="card-body">
                                 <h2 class="card-title bg-white w-28 p-2">ShopEase</h2>
-                                <h1 class="text-2xl font-[#00303C]">Fix Mobile Button Issue</h1>
+                                <h1 class="text-2xl font-headingColor">Fix Mobile Button Issue</h1>
                                 <textarea class="w-80 bg-white resize-none h-[92px] border-white" name="message"
                                     placeholder="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly" id="message-box-4"></textarea>
+and ensure onClick works properly" id="message-box-1"></textarea>
                                 <div class="card-actions justify-between w-80">
-                                    <div class="font-[#00303C]">
+                                    <div class="font-headingColor">
                                         <h3 class="text-[14px]">Deadline</h3>
                                         <h2 class="font-medium">21 March 2025</h2>
                                     </div>
@@ -188,17 +193,17 @@ and ensure onClick works properly" id="message-box-4"></textarea>
                         </div>
                     </div>
 
-                    <!-- box-item-2 -->
+                    <!-- 5th items -->
                     <div>
-                        <div class="card card-border bg-[#F4F7FF] w-96">
+                        <div class="card card-border bg-deVprimary">
                             <div class="card-body">
                                 <h2 class="card-title bg-white w-28 p-2">ShopEase</h2>
-                                <h1 class="text-2xl font-[#00303C]">Fix Mobile Button Issue</h1>
+                                <h1 class="text-2xl font-headingColor">Fix Mobile Button Issue</h1>
                                 <textarea class="w-80 bg-white resize-none h-[92px] border-white" name="message"
                                     placeholder="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly" id="message-box-5"></textarea>
+and ensure onClick works properly" id="message-box-1"></textarea>
                                 <div class="card-actions justify-between w-80">
-                                    <div class="font-[#00303C]">
+                                    <div class="font-headingColor">
                                         <h3 class="text-[14px]">Deadline</h3>
                                         <h2 class="font-medium">21 March 2025</h2>
                                     </div>
@@ -209,17 +214,17 @@ and ensure onClick works properly" id="message-box-5"></textarea>
                         </div>
                     </div>
 
-                    <!-- box-item-3 -->
+                    <!-- 6th items -->
                     <div>
-                        <div class="card card-border bg-[#F4F7FF] w-96">
+                        <div class="card card-border bg-deVprimary">
                             <div class="card-body">
                                 <h2 class="card-title bg-white w-28 p-2">ShopEase</h2>
-                                <h1 class="text-2xl font-[#00303C]">Fix Mobile Button Issue</h1>
+                                <h1 class="text-2xl font-headingColor">Fix Mobile Button Issue</h1>
                                 <textarea class="w-80 bg-white resize-none h-[92px] border-white" name="message"
                                     placeholder="Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
-and ensure onClick works properly" id="message-box-6"></textarea>
+and ensure onClick works properly" id="message-box-1"></textarea>
                                 <div class="card-actions justify-between w-80">
-                                    <div class="font-[#00303C]">
+                                    <div class="font-headingColor">
                                         <h3 class="text-[14px]">Deadline</h3>
                                         <h2 class="font-medium">21 March 2025</h2>
                                     </div>
@@ -232,14 +237,18 @@ and ensure onClick works properly" id="message-box-6"></textarea>
 
                 </div>
             </div>
-            <!-- right content -->
-            <div class="w-full max-w-1/4 bg-green-300">
-
+            <!-- content right section -->
+            <div class="bg-white text-center col-span-1 gap-5 p-5">
+                <div class="flex justify-center items-center mb-5">
+                    <img class="w-[25px] h-[25px]" src="assets/activity.png" alt="">
+                    <h3 class="text-headingColor text-xl pl-5">Activity Log</h3>
+                </div>
+                <button class="btn btn-primary text-white bg-linear-to-r from-cyan-500 to-blue-500 border-none">Clear
+                    History</button>
             </div>
-        </div>
+        </section>
     </main>
 
-    <script src="script/script.js"></script>
 </body>
 
 </html>
