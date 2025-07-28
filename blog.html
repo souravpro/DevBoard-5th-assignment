@@ -35,8 +35,9 @@
                     <a class="btn btn-ghost text-3xl"><img class="h-[52px] w-[52px]" src="assets/logo.png" alt=""><span
                             class="font-light">Dev</span>Board</a>
                 </div>
-                <div class="flex-none">
-                    <button class="btn btn-primary text-white bg-linear-to-r from-cyan-500 to-blue-500 border-none">Back
+                <div class="flex-none cursor-pointer">
+                    <button id="home-section"
+                        class="btn btn-primary text-white bg-linear-to-r from-cyan-500 to-blue-500 border-none">Back
                         to Desk</button>
                 </div>
             </div>
@@ -131,6 +132,15 @@
 
     </main>
 
+
+    <script src="script/script.js"></script>
+
+
+    <script>
+        document.getElementById("home-section").addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
 </body>
 
 </html>
