@@ -68,4 +68,72 @@ document.getElementById("complete-task-2").addEventListener("click", function ()
 });
 
 
+document.getElementById("complete-task-3").addEventListener("click", function () {
+    alert("Board updated Successfully");
+
+    document.getElementById("complete-task-3").disabled = true;
+
+    newParagraph3.textContent = `${customText} ${task3.textContent} [${timeString}]`;
+    newParagraph3.classList.add("bg-deVprimary", "p-2", "rounded-lg", "mt-2");
+    activityLog.appendChild(newParagraph3);
+
+
+    taskAssignedCount.innerText = parseInt(taskAssignedCount.innerText) - 1;
+
+    totalCount.innerText = parseInt(totalCount.innerText) + 1;
+
+});
+
+
+document.getElementById("complete-task-4").addEventListener("click", function () {
+    alert("Board updated Successfully");
+
+    document.getElementById("complete-task-4").disabled = true;
+
+    newParagraph4.textContent = `${customText} ${task4.textContent} [${timeString}]`;
+    newParagraph4.classList.add("bg-deVprimary", "p-2", "rounded-lg", "mt-2");
+    activityLog.appendChild(newParagraph4);
+
+
+    taskAssignedCount.innerText = parseInt(taskAssignedCount.innerText) - 1;
+
+    totalCount.innerText = parseInt(totalCount.innerText) + 1;
+
+});
+
+
+document.getElementById("complete-task-5").addEventListener("click", function () {
+    alert("Board updated Successfully");
+
+    document.getElementById("complete-task-5").disabled = true;
+
+    newParagraph5.textContent = `${customText} ${task5.textContent} [${timeString}]`;
+    newParagraph5.classList.add("bg-deVprimary", "p-2", "rounded-lg", "mt-2");
+    activityLog.appendChild(newParagraph5);
+
+
+    taskAssignedCount.innerText = parseInt(taskAssignedCount.innerText) - 1;
+
+    totalCount.innerText = parseInt(totalCount.innerText) + 1;
+
+});
+
+
+document.getElementById("complete-task-6").addEventListener("click", function () {
+    alert("Board updated Successfully");
+
+    document.getElementById("complete-task-6").disabled = true;
+
+    newParagraph6.textContent = `${customText} ${task6.textContent} [${timeString}]`;
+    newParagraph6.classList.add("bg-deVprimary", "p-2", "rounded-lg", "mt-2");
+    activityLog.appendChild(newParagraph6);
+
+
+    taskAssignedCount.innerText = parseInt(taskAssignedCount.innerText) - 1;
+
+    totalCount.innerText = parseInt(totalCount.innerText) + 1;
+
+});
+
+
 
