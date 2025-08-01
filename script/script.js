@@ -136,4 +136,13 @@ document.getElementById("complete-task-6").addEventListener("click", function ()
 });
 
 
+document.getElementById("clear-history").addEventListener("click", function () {
+    activityLog.innerHTML = "";
+    taskAssignedCount.innerText = "6";
+    totalCount.innerText = "23";
+    alert("History cleared successfully");
+});
+
+
+
 
